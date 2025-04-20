@@ -6,12 +6,12 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-- 🔍 Efficient movie search using IMDb (via unofficial endpoints)
-- 🔢 Presents top 5 matching results with title, release year, and IMDb ID
-- 🧠 Leverages Puppeteer to extract, streaming URLs from public piracy sites
-- 🎥 Plays selected movie stream using `mpv` player
+- Efficient movie search using IMDb (via unofficial endpoints)
+- Presents top 5 matching results with title, release year, and IMDb ID
+- Leverages Puppeteer to extract, streaming URLs from public piracy sites
+- Plays selected movie stream using `mpv` player
 
 ---
 
@@ -33,19 +33,19 @@ To use movie-cli, you need the following:
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/your-username/movie-cli
+git clone http://github.com/lamsal27/movie-cli.git
 cd movie-cli
 npm install
 ```
 
 ---
 
-## ▶️ How to Use
+## How to Use
 
 Run the script using Node.js:
 
 ```bash
-node index.js
+node movie_cli.js
 ```
 
 Follow the on-screen prompts:
@@ -56,7 +56,7 @@ Follow the on-screen prompts:
 
 ---
 
-## 📝 Contribution Guidelines
+## Contribution Guidelines
 
 Contributions are encouraged and appreciated!
 
@@ -78,7 +78,7 @@ Please maintain clean coding standards and ensure your changes are functional be
 
 ---
 
-## 📄 License
+## License
 
 This project is distributed under the **GNU General Public License v3.0**.
 
@@ -86,7 +86,7 @@ Read the full license [here](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ---
 
-📌 Legal Disclaimer
+ Legal Disclaimer
 
 This tool is intended strictly for educational and personal experimentation. It does not host, promote, or redistribute any copyrighted material. All video sources are retrieved through publicly accessible web content. The author neither encourages nor condones the use of this tool to violate any terms of service or local copyright laws.
 Use at your own discretion. The responsibility for how this script is used lies entirely with the end user.
