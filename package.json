@@ -2,7 +2,7 @@
   "name": "movie-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "stream.js",
+  "main": "movie_cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,9 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "puppeteer": "^24.6.1"
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
+    "puppeteer": "^24.6.1",
+    "readline": "^1.3.0"
   }
 }
