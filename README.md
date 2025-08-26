@@ -1,99 +1,56 @@
-# Movie-CLI - Watch movies from terminal
+# movie-cli
 
-**movie-cli** is a terminal-based application built with Node.js that allows users to search for movies, extract streaming links via web scraping, and play them directly using `mpv` or `vlc` —all without requiring any external APIs.
-
-> ✨ Heavily inspired by [ani-cli](https://github.com/pystardust/ani-cli)
+A Python app to fetch, explore and watch movies from the terminal.
 
 ---
 
-## Key Features
+## Features
 
-- Efficient movie search using IMDb (via unofficial endpoints)
-- Presents top 5 matching results with title, release year, and IMDb ID
-- Leverages Puppeteer to extract, streaming URLs from public piracy sites
-- Plays selected movie stream using `mpv` player
-
----
-
-## ⚙️ Prerequisites
-
-To use movie-cli, you need the following:
-
-- [Node.js](https://nodejs.org/) version 18 or higher
-- [`mpv`](https://mpv.io/) media player installed globally on your system
-- [Google Chrome](https://www.google.com/chrome/) or Chromium browser for Puppeteer automation
-- A stable internet connection
-
-> Note: Currently optimized for Unix-based systems (Linux/macOS); Windows support is untested.
+* View **Top 25 movies** 🍿
+* See **Most Popular / Trending** movies 🔥
+* **Search** for any movie 🎯
+* Get detailed info: release year, duration, rating, directors, genres, and plot 📖
+* Returns **direct links** to watch the desired movies ▶️
 
 ---
 
-## 📦 Installation
+## Installation
 
-Clone the repository and install the dependencies:
+1. Clone the repo:
 
 ```bash
-git clone http://github.com/lamsal27/movie-cli.git
+git clone https://github.com/lamsal27/movie-cli.git
 cd movie-cli
-npm install
 ```
 
----
-
-## How to Use
-
-Run the script using Node.js:
+2. Install dependencies:
 
 ```bash
-node movie_cli.js
+pip install typer requests beautifulsoup4 rich
 ```
 
-Follow the on-screen prompts:
+---
 
-1. Enter the name of the movie you're looking for
-2. Select a result from the displayed list
-3. The program fetches the stream link and plays it in `mpv`
+## Usage
+
+Run the app:
+
+```bash
+python main.py
+```
+
+Follow the prompts to browse or search for movies.
 
 ---
 
-## Contribution Guidelines
+## Notes
 
-Contributions are encouraged and appreciated!
-
-Ways to contribute:
-
-- 📊 Report issues or bugs
-- 🚀 Suggest new features
-- 📚 Submit pull requests
-
-To contribute:
-
-1. Fork this repository
-2. Create a feature branch (`git checkout -b feature-name`)
-3. Make your changes and commit them
-4. Push to your fork
-5. Submit a pull request
-
-Please maintain clean coding standards and ensure your changes are functional before submission.
+* Requires an internet connection 🌐
+* Uses IMDb pages to fetch movie details
+* Terminal-friendly display using Rich
+* Provides direct links to watch selected movies online
 
 ---
 
-## License
+Made with ❤️ by [lamsal27](https://github.com/lamsal27)
 
-This project is distributed under the **GNU General Public License v3.0**.
-
-Read the full license [here](https://www.gnu.org/licenses/gpl-3.0.html).
-
----
-
- Legal Disclaimer
-
-This tool is intended strictly for educational and personal experimentation. It does not host, promote, or redistribute any copyrighted material. All video sources are retrieved through publicly accessible web content. The author neither encourages nor condones the use of this tool to violate any terms of service or local copyright laws.
-Use at your own discretion. The responsibility for how this script is used lies entirely with the end user.
-
----
-
-## 🚀 Acknowledgements
-
-- Inspired by [ani-cli](https://github.com/pystardust/ani-cli) — a terminal tool for anime streaming
-- Designed for users who prefer lightweight, CLI-based media solutions
