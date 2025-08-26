@@ -4,6 +4,8 @@ A Python app to fetch, explore and watch movies from the terminal.
 
 ---
 
+<img src="images/movie-cli.png"></img>
+
 ## Features
 
 * View **Top 25 movies** 🍿
