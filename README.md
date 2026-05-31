@@ -1,58 +1,46 @@
 # movie-cli
 
-A Python app to fetch, explore and watch movies from the terminal.
+Browse and stream movies from your terminal.
 
----
+## Requirements
 
-<img src="images/movie-cli.png"></img>
+- Python 3.10+
+- [fzf](https://github.com/junegunn/fzf#installation)
+- A free [TMDB token](https://www.themoviedb.org/settings/api)
 
-## Features
-
-* View **Top 25 movies** 🍿
-* See **Most Popular / Trending** movies 🔥
-* **Search** for any movie 🎯
-* Get detailed info: release year, duration, rating, directors, genres, and plot 📖
-* Returns **direct links** to watch the desired movies ▶️
-
----
-
-## Installation
-
-1. Clone the repo:
+## Install
 
 ```bash
-git clone https://github.com/lamsal27/movie-cli.git
+git clone https://github.com/lamsal27/movie-cli
 cd movie-cli
+pip install httpx python-dotenv
 ```
 
-2. Install dependencies:
+Install fzf:
 
 ```bash
-pip install typer requests beautifulsoup4 rich
+brew install fzf        # macOS
+sudo apt install fzf    # Ubuntu/Debian
+scoop install fzf       # Windows
 ```
 
----
-
-## Usage
-
-Run the app:
+## Run
 
 ```bash
-python main.py
+python movies.py
 ```
 
-Follow the prompts to browse or search for movies.
+First run will prompt for your TMDB token. Saved to `.env` — never asked again.
 
----
+## Controls
 
-## Notes
+| Key | Action |
+|-----|--------|
+| `↑` `↓` | Navigate |
+| Type | Fuzzy filter |
+| `Enter` | Select |
+| `Esc` | Go back |
 
-* Requires an internet connection 🌐
-* Uses IMDb pages to fetch movie details
-* Terminal-friendly display using Rich
-* Provides direct links to watch selected movies online
+## License
 
----
-
-Made with ❤️ by [lamsal27](https://github.com/lamsal27)
-
+[GPL-3.0](LICENSE)
