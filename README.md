@@ -1,6 +1,6 @@
 # movie-cli
 
-Browse and stream movies from your terminal.
+Browse movies from your terminal.
 
 ## Requirements
 
